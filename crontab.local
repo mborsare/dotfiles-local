@@ -1,0 +1,5 @@
+PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+@daily * * * find /Users/mikeborsare/Screenshot* -mtime +6 -type f -delete
+40 11 * * * /bin/sh /Users/mikeborsare/scripts/daily-cleanup.sh
+

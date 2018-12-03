@@ -1,0 +1,46 @@
+" Specify a directory for plugins
+" Set the Vim Plug directory
+call plug#begin('~/.vim/plugged')
+
+" Call Vim Plugs
+Plug 'kristijanhusak/vim-hybrid-material'
+
+" Initialize Vim Plug
+call plug#end()
+
+" syntax highlighting and filetype detection
+syntax on
+filetype plugin indent on
+
+" set indents to 2 spaces
+set sw=2
+set ts=2
+
+" theme stuff
+set background=dark
+colorscheme hybrid_material
+
+" map the keys 'jk' to the Escape key to improve efficiency.
+inoremap jk <Esc>`^
+
+" change cursor for different modes
+let &t_EI.="\e[1 q"
+let &t_SI.="\e[5 q"
+let &t_SR.="\e[3 q"
+let &t_ti.="\e[1 q"
+let &t_te.="\e[0 q"
+
+" relative line numbers
+set number
+set relativenumber
+augroup linenumbers
+  autocmd!
+  autocmd BufEnter *    :set relativenumber
+  autocmd BufLeave *    :set number norelativenumber
+  autocmd WinEnter *    :set relativenumber
+  autocmd WinLeave *    :set number norelativenumber
+  autocmd InsertEnter * :set number norelativenumber
+  autocmd InsertLeave * :set relativenumber
+  autocmd FocusLost *   :set number norelativenumber
+  autocmd FocusGained * :set relativenumber
+augroup END
