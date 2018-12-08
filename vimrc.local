@@ -48,3 +48,7 @@ augroup END
 " Map ; to : for faster commands
 nmap ; :
 noremap ;; ;
+
+" Quit files with leader q
+noremap <leader>q :q<cr> 
+
