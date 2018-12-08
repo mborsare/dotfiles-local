@@ -2,7 +2,7 @@ export PATH="$HOME/.bin:$PATH"
 
 # recommended by brew doctor
 export PATH="/usr/local/bin:$PATH"
-source /Users/mikeborsare/.asdf/asdf.sh
+source /Users/$USER/.asdf/asdf.sh
 
 #zplug business
 export ZPLUG_HOME=/usr/local/opt/zplug
