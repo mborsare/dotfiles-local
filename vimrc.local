@@ -4,6 +4,7 @@ call plug#begin('~/.vim/plugged')
 
 " Call Vim Plugs
 Plug 'kristijanhusak/vim-hybrid-material'
+Plug 'sheerun/vim-polyglot'
 
 " Initialize Vim Plug
 call plug#end()
