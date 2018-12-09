@@ -3,6 +3,7 @@
 call plug#begin('~/.vim/plugged')
 
 " Call Vim Plugs
+Plug 'itchyny/lightline.vim'
 Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'sheerun/vim-polyglot'
 
