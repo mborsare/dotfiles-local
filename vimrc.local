@@ -55,4 +55,11 @@ noremap ;; ;
 noremap <leader>q :q<cr> 
 
 " Remove trailing blank lines on save
-autocmd BufWritePre <buffer> :%s/\($\n\s*\)\+\%$//e
+" and preserve cursor position
+function TrimEndLines()
+  let save_cursor = getpos(".")
+  :silent! %s#\($\n\s*\)\+\%$##
+  call setpos('.', save_cursor)
+endfunction
+
+autocmd BufWritePre * call TrimEndLines()
