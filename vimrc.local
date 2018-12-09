@@ -54,3 +54,5 @@ noremap ;; ;
 " Quit files with leader q
 noremap <leader>q :q<cr> 
 
+" Remove trailing blank lines on save
+autocmd BufWritePre <buffer> :%s/\($\n\s*\)\+\%$//e
