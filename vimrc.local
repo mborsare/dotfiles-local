@@ -67,4 +67,4 @@ endfunction
 autocmd BufWritePre * call TrimEndLines()
 
 " A better NerdTree setup
-source ~/dotfiles-local/vim/nerdtree.vim
+source $HOME/dotfiles-local/vim/nerdtree.vim
