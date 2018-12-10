@@ -3,6 +3,7 @@
 call plug#begin('~/.vim/plugged')
 
 " Call Vim Plugs
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'itchyny/lightline.vim'
 Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'scrooloose/nerdtree'
