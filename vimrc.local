@@ -5,6 +5,7 @@ call plug#begin('~/.vim/plugged')
 " Call Vim Plugs
 Plug 'itchyny/lightline.vim'
 Plug 'kristijanhusak/vim-hybrid-material'
+Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
 
 " Initialize Vim Plug
@@ -63,3 +64,6 @@ function TrimEndLines()
 endfunction
 
 autocmd BufWritePre * call TrimEndLines()
+
+" A better NerdTree setup
+source ~/dotfiles-local/vim/nerdtree.vim
