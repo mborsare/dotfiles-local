@@ -72,3 +72,6 @@ source $HOME/dotfiles-local/vim/nerdtree.vim
 
 " Less wonky mouse scrolling in terminal
 set mouse=a
+
+" Set a comfortable line-height
+set linespace=1
