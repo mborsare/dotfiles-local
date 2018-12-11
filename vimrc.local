@@ -69,3 +69,6 @@ autocmd BufWritePre * call TrimEndLines()
 
 " A better NerdTree setup
 source $HOME/dotfiles-local/vim/nerdtree.vim
+
+" Less wonky mouse scrolling in terminal
+set mouse=a
