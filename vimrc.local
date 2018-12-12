@@ -1,26 +1,3 @@
-" Specify a directory for plugins
-" Set the Vim Plug directory
-call plug#begin('~/.vim/plugged')
-
-" Call Vim Plugs
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'christoomey/vim-sort-motion'
-Plug 'itchyny/lightline.vim'
-Plug 'kristijanhusak/vim-hybrid-material'
-Plug 'scrooloose/nerdtree'
-Plug 'sheerun/vim-polyglot'
-
-" Initialize Vim Plug
-call plug#end()
-
-" syntax highlighting and filetype detection
-syntax on
-filetype plugin indent on
-
-" set indents to 2 spaces
-set sw=2
-set ts=2
-
 " theme stuff
 set background=dark
 colorscheme hybrid_material

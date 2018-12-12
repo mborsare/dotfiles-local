@@ -1,0 +1,6 @@
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'christoomey/vim-sort-motion'
+Plug 'itchyny/lightline.vim'
+Plug 'kristijanhusak/vim-hybrid-material'
+Plug 'scrooloose/nerdtree'
+Plug 'sheerun/vim-polyglot'
