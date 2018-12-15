@@ -31,8 +31,10 @@ augroup END
 nmap ; :
 noremap ;; ;
 
-" Quit files with leader q
-noremap <leader>q :q<cr> 
+" Leader shortcuts
+noremap <leader>q :q<cr> " Quit files with leader q
+noremap <leader>w :w<cr> " Save files with leader w
+noremap <leader>bd :bd<cr> " Kill buffer
 
 " Remove trailing blank lines on save
 " and preserve cursor position

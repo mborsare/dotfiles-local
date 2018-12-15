@@ -1,4 +1,5 @@
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'chrisbra/Colorizer'
 Plug 'christoomey/vim-sort-motion'
 Plug 'itchyny/lightline.vim'
 Plug 'taohexxx/lightline-buffer'

@@ -1,5 +1,24 @@
-PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+# env EDITOR=nano crontab -e
+#
+# see cron/ folder
+#    chmod +x *.sh
 
-@daily * * * find /Users/mikeborsare/Screenshot* -mtime +6 -type f -delete
-40 11 * * * /bin/sh /Users/mikeborsare/scripts/daily-cleanup.sh
-
+#=====================================================================#
+#  |       |        |        |         |                              #
+#=====================================================================#
+#     0-23   0-59               0-30  0-6   1-12                      #
+#     |_    _|                 _|    _|    _|                         #
+#       |  |                  |     |     |            * any          #
+#    At HH:MM on day-of-month MD on WD in M            - range        #
+#       |  |                  |     |     |            , array        #
+#     __|__|            ______|     |   __|            / step         #
+#    |  |            __|         ___|__|                              #
+#   _|  |__         |         __|   |__                               #
+#  |       |        |        |         |                              #
+#  |       |        |        |         |                              #
+#=====================================================================#
+#  Min  |  Hour  |  Mday  |  Month  |  Wday  |  Command               #
+#=====================================================================#
+   0       10       *        *         0        $HOME/dotfiles-local/cron/daily-cleanup.sh > /dev/null 2>&1
+#  20      17,18    *        *         1-5      $HOME/dotfiles-local/cron/twice-during-weekdays.sh  > /dev/null 2>&1
+#=====================================================================#
