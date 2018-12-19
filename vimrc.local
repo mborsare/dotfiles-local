@@ -36,10 +36,13 @@ noremap <leader>q :q<cr> " Quit files with leader q
 noremap <leader>w :w<cr> " Save files with leader w
 noremap <leader>x :x<cr> " Save and close
 noremap <leader>bd :bd<cr> " Kill buffer
+noremap <leader>ev :vsp $HOME/dotfiles-local/vimrc.local<cr> " edit vimrc
+noremap <leader>ez :vsp $HOME/dotfiles-local/zshrc.local<cr> " edit zshrc
+noremap <leader>sv :source $MYVIMRC<cr> " reload vimrc
 
 " Remove trailing blank lines on save
 " and preserve cursor position
-function TrimEndLines()
+function! TrimEndLines()
   let save_cursor = getpos(".")
   :silent! %s#\($\n\s*\)\+\%$##
   call setpos('.', save_cursor)
@@ -50,6 +53,8 @@ autocmd BufWritePre * call TrimEndLines()
 " Plugin settings
 source $HOME/dotfiles-local/vim/nerdtree.vim
 source $HOME/dotfiles-local/vim/lightline-buffer.vim
+let g:ctrlp_map = '<Leader>p'
+let g:colorizer_auto_filetype = 'css,html,less,scss'
 
 " Less wonky mouse scrolling in terminal
 set mouse=a
@@ -57,5 +62,7 @@ set mouse=a
 " Set a comfortable line-height
 set linespace=2
 
-let g:ctrlp_map = '<Leader>p'
-let g:colorizer_auto_filetype = 'css,html,less,scss'
+" Disable audible and visual bells
+set noerrorbells
+set novisualbell
+set t_vb=
