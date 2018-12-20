@@ -1,7 +1,7 @@
-export PATH="$HOME/.bin:$PATH"
+export PATH="$HOME/.bin:$PATH"  # base PATH
+       path+=$HOME/.node/bin    # append node bins to base PATH
 
 # recommended by brew doctor
-export PATH="/usr/local/bin:$PATH"
 source /Users/$USER/.asdf/asdf.sh
 
 #zplug business
