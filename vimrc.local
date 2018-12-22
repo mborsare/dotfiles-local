@@ -1,6 +1,6 @@
 " theme stuff
-set background=dark
 colorscheme hybrid_material
+set background=dark
 
 " map the keys 'jk' to the Escape key to improve efficiency.
 inoremap jk <Esc>`^
@@ -53,6 +53,8 @@ autocmd BufWritePre * call TrimEndLines()
 " Plugin settings
 source $HOME/dotfiles-local/vim/nerdtree.vim
 source $HOME/dotfiles-local/vim/lightline-buffer.vim
+source $HOME/dotfiles-local/vim/prettier.vim
+source $HOME/dotfiles-local/vim/indent-guides.vim
 let g:ctrlp_map = '<Leader>p'
 let g:colorizer_auto_filetype = 'css,html,less,scss'
 
@@ -66,3 +68,6 @@ set linespace=2
 set noerrorbells
 set novisualbell
 set t_vb=
+
+" highlight current column
+set cursorcolumn 

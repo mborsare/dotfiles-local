@@ -6,3 +6,5 @@ Plug 'taohexxx/lightline-buffer'
 Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'nathanaelkane/vim-indent-guides'

@@ -21,11 +21,16 @@ let g:lightline = {
     \ },
     \ 'component_function': {
     \   'bufferinfo': 'lightline#buffer#bufferinfo',
+    \   'filename': 'LightLineFilename'
     \ },
     \ 'component': {
     \   'separator': '',
     \ },
     \ }
+
+function! LightLineFilename()
+  return expand('%:p:h')
+endfunction
 
 " remap arrow keys
 nnoremap <Left> :bprev<CR>
