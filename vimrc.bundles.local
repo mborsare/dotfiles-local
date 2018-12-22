@@ -8,3 +8,4 @@ Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'luochen1990/rainbow'
