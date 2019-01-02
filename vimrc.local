@@ -39,7 +39,7 @@ noremap <leader>bd :bd<cr> " Kill buffer
 noremap <leader>ev :vsp $HOME/dotfiles-local/vimrc.local<cr> " edit vimrc
 noremap <leader>ez :vsp $HOME/dotfiles-local/zshrc.local<cr> " edit zshrc
 noremap <leader>sv :source $MYVIMRC<cr> " reload vimrc
-noremap <leader>rt :RainbowToggle<cr> " toggle rainbow parens
+noremap <leader>tr :RainbowToggle<cr> " toggle rainbow parens
 
 " Remove trailing blank lines on save
 " and preserve cursor position
@@ -56,6 +56,7 @@ source $HOME/dotfiles-local/vim/nerdtree.vim
 source $HOME/dotfiles-local/vim/lightline-buffer.vim
 source $HOME/dotfiles-local/vim/prettier.vim
 source $HOME/dotfiles-local/vim/indent-guides.vim
+source $HOME/dotfiles-local/vim/vim-startify.vim
 let g:ctrlp_map = '<Leader>p'
 let g:colorizer_auto_filetype = 'css,html,less,scss'
 let g:rainbow_active = 0 " Rainbow parens off by default
