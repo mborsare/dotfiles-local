@@ -1,8 +1,16 @@
 set hidden  " allow buffer switching without saving
 set showtabline=2  " always show tabline
 
+if has('gui_running') " disable gui tabline
+  set guioptions-=e
+endif
+
 " use lightline-buffer in lightline
 let g:lightline = {
+    \ 'active': {
+    \   'left': [ [ 'mode', 'paste' ],
+    \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+    \ },
     \ 'tabline': {
     \   'left': [ [ 'bufferinfo' ],
     \             [ 'separator' ],
@@ -21,7 +29,8 @@ let g:lightline = {
     \ },
     \ 'component_function': {
     \   'bufferinfo': 'lightline#buffer#bufferinfo',
-    \   'filename': 'LightLineFilename'
+    \   'filename': 'LightLineFilename',
+    \   'gitbranch': 'fugitive#head'
     \ },
     \ 'component': {
     \   'separator': '',
