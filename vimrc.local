@@ -36,6 +36,7 @@ noremap <leader>q :q<cr> " Quit files with leader q
 noremap <leader>w :w<cr> " Save files with leader w
 noremap <leader>x :x<cr> " Save and close
 noremap <leader>bd :bd<cr> " Kill buffer
+noremap <leader>bdd :bd!<cr> " Force kill buffer
 noremap <leader>ev :vsp $HOME/dotfiles-local/vimrc.local<cr> " edit vimrc
 noremap <leader>ez :vsp $HOME/dotfiles-local/zshrc.local<cr> " edit zshrc
 noremap <leader>sv :source $MYVIMRC<cr> " reload vimrc
