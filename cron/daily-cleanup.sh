@@ -10,8 +10,9 @@ brew missing
 
 apm upgrade -c false
 
-mas outdated
-mas upgrade
+# mas broke with macOS 10.13+
+  # mas outdated 
+  # mas upgrade
 
 npm update -g
 # echo “did you think to launch gem update “
