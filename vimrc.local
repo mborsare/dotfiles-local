@@ -56,7 +56,6 @@ autocmd BufWritePre * call TrimEndLines()
 source $HOME/dotfiles-local/vim/lightline-buffer.vim
 source $HOME/dotfiles-local/vim/prettier.vim
 source $HOME/dotfiles-local/vim/indent-guides.vim
-source $HOME/dotfiles-local/vim/vim-startify.vim
 let g:ctrlp_map = '<Leader>p'
 let g:colorizer_auto_filetype = 'css,html,less,scss'
 let g:rainbow_active = 0 " Rainbow parens off by default
