@@ -53,7 +53,6 @@ endfunction
 autocmd BufWritePre * call TrimEndLines()
 
 " Plugin settings
-source $HOME/dotfiles-local/vim/nerdtree.vim
 source $HOME/dotfiles-local/vim/lightline-buffer.vim
 source $HOME/dotfiles-local/vim/prettier.vim
 source $HOME/dotfiles-local/vim/indent-guides.vim
