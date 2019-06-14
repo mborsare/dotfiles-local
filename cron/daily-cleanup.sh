@@ -41,4 +41,4 @@ find . -type f -mmin +$EXPIRE -maxdepth 1 -exec ls -u {} \; | while read line; d
   mv "$line" "$FOLDER"
 done
 
-echo "Archived all expired files
+echo "Archived all expired files"
