@@ -22,7 +22,7 @@ asdf update
 asdf plugin-update --all
 
 # delete screenshots older than a week
-echo “Deleting old screenshots...“
+echo "Deleting old screenshots..."
 find $HOME/Screenshot* -mtime +6 -type f -delete
 
 # Clean desktop of files not modified in the last 24 hrs
