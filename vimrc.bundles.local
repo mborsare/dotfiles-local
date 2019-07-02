@@ -9,3 +9,4 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'luochen1990/rainbow'
 Plug 'mhinz/vim-startify'
 Plug 'machakann/vim-highlightedyank'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
